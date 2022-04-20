@@ -56,10 +56,21 @@ section{
     position: relative;
 }
 .top-left{
+    display: flex;
+    height: 100%;
     margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .top-left img{
     width: 10.5rem;
+}
+.top-left a{
+    margin-left: 2.5rem;
+    font-size: 1.2rem !important;
+    color: var(--text-color);
+    background:transparent !important;
 }
 .top-right{
     position: relative;

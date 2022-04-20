@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red : #e50914;
+    --text-color : #ffffff;
+    --border : #222;
+    --bg-color-1 :#000000;
+    --bg-color-2 :#303030;
+    --footer : #757575;
+}
+a{
+    text-decoration: none;
+}
+li.ol,ul{
+    list-style: none;
+}
+input,button,textarea,a{
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+body{
+    background: var(--bg-color-1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    display: flex;
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+
+.header{
+    height: 120vh;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.25), rgba(1, 1, 1, 1)), url('./img/front.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top{
+    /* border: 2px solid white; */
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 2rem 3rem;
+    align-items: center;
+    height: auto;
+    position: relative;
+}
+.top-left{
+    margin-right: auto;
+}
+.top-left img{
+    width: 10.5rem;
+}
+
+
+.sign-in-container{
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    height: fit-content;
+    /* padding: 4rem 3rem; */
+    background:rgba(0, 0, 0, 0.7) ;
+    color: var(--text-color);
+    
+}
+.sign-in{
+    margin: auto 0;
+    padding:60px 68px 40px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    outline: none;
+}
+.sign-in h4{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.sign-in input{
+    height: 3.5rem;
+    font-size: 1.1rem;
+    padding: 0 0.7rem ;
+    margin: 0.5rem 0;
+    color: var(--footer);
+    background: var(--bg-color-2);
+}
+.sign-in button{
+    width: 100%;
+    height: 3rem;
+    margin: 0.7rem 0;
+    font-size: 1.2rem;
+    background: var(--red);
+    color: var(--text-color);
+    outline: none;
+    border: none;
+}
+.sign-in p{
+    width: 100%;
+    text-align: right;
+    margin: -0.2rem 0;
+    font-size: 0.8rem;
+    
+}
+.sign-in h5{
+    color: var(--footer);
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.sign-in h5 a{
+    color: var(--footer);
+}
+
+
+
+
+
+.footer{
+    position: absolute;
+    bottom: -20vh;
+    padding: 4rem 3rem;
+    color: var(--text-color);
+    /* border-bottom: 8px solid var(--bg-color-2);  */
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.7);
+}
+.footer-detail{
+    min-width: 190px;
+    padding-bottom: 2rem;
+    font-size: 1em;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-question{
+    width: 100%;
+    position: relative;
+}
+.footer-question p{
+    color: var(--footer);
+    margin-bottom: 1.5rem;
+
+}
+.footer-link{
+    position: relative;
+    display: flex;
+}
+.f-links{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+
+.f-links a{
+    margin-bottom: 0.9rem;
+    box-sizing: border-box;
+    padding: 0;
+    display: inline-block;
+    min-width: 100px;
+    width: 90%;
+    padding-right: 1rem;
+    vertical-align: top;
+    color: var(--footer);
+}
+
+.footer-lan{
+    position: relative;
+    margin-right:1rem;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+.footer-lan select{
+    position: relative;
+    padding: 0.7rem 2rem;
+    -webkit-appearance: none;
+    width: auto;
+    background: var(--bg-color-1);
+    text-align: center;
+    color: var(--footer);
+    border: 1px solid var(--footer);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.footer-lan::before{
+    position: absolute;
+    content: '\f57c';
+    top: 38%;
+    left: 10%;
+    color: var(--footer);
+    font-size: 0.8rem;
+    font-family: FontAwesome;
+    /* border: 1px solid red; */
+    z-index: 10;
+    
+}
+.footer-lan::after{
+    position: absolute;
+    content: '\f0d7';
+    top: 23%;
+    right: 10%;
+    color: var(--footer);
+    font-size: 1.3rem;
+    font-family: FontAwesome;
+    /* border: 1px solid red; */
+    
+}
